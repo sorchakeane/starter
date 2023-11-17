@@ -4,7 +4,7 @@ steps:
     key: build
 
   - label: ":white_check_mark: Test"
-    command: echo "Test the rocket"
+    command: echo "Test the rocket ${FOO:-1234}"
     key: test
     depends_on: build
 
